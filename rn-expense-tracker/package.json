@@ -1,5 +1,5 @@
 {
-  "name": "turbo",
+  "name": "rn-expense-tracker",
   "private": true,
   "scripts": {
     "build": "turbo build",
