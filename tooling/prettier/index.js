@@ -31,6 +31,12 @@ const config = {
   ],
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   importOrderTypeScriptVersion: "4.4.0",
+  printWidth: 80,
+  trailingComma: "all",
+  tabWidth: 2,
+  semi: true,
+  singleQuote: true,
+  bracketSpacing: true,
 };
 
 export default config;
