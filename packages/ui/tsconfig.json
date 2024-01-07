@@ -3,6 +3,7 @@
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": ["*.ts", "src"],
+  "types": ["nativewind/types"],
+  "include": ["*.ts", "src", "src/types/nativewind-env.d.ts"],
   "exclude": ["node_modules"]
 }

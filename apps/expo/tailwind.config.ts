@@ -1,10 +1,17 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 // @ts-expect-error - no types
-import nativewind from "nativewind/preset";
+import nativewind from 'nativewind/preset';
 
-import baseConfig from "@acme/tailwind-config";
+import baseConfig from '@acme/tailwind-config';
 
 export default {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: ['./src/**/*.{ts,tsx}'],
   presets: [baseConfig, nativewind],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['PoppinsRegular'],
+      },
+    },
+  },
 } satisfies Config;
