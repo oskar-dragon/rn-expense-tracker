@@ -1,4 +1,5 @@
-import { cnBase, tv } from 'tailwind-variants';
+import { cnBase } from 'tailwind-variants';
 
-export { cnBase, tv };
 export * from './types';
+
+export { cnBase };

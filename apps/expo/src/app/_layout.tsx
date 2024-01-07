@@ -51,6 +51,15 @@ function RootLayoutNav() {
       screenOptions={{
         headerShown: false,
       }}
-    ></Stack>
+    >
+      <Stack.Screen
+        name="(modal)/addExpense"
+        options={{
+          headerTitle: 'Add Expense',
+          presentation: 'modal',
+          headerShown: true,
+        }}
+      />
+    </Stack>
   );
 }

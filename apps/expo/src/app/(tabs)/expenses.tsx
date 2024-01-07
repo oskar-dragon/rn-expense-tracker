@@ -2,10 +2,12 @@ import { useLayoutEffect } from 'react';
 import { Text, View } from 'react-native';
 import { useNavigation } from 'expo-router';
 
-export default function AppExpensesScreen() {
+import { Screen } from '~/components/Screen';
+
+export default function ExpensesScreen() {
   return (
-    <View>
-      <Text>AllExpenses</Text>
-    </View>
+    <Screen>
+      <Text>AddExpense</Text>
+    </Screen>
   );
 }

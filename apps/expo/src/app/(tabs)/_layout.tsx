@@ -1,7 +1,9 @@
-import { Tabs } from 'expo-router';
-import { CalendarDays, Hourglass } from 'lucide-react-native';
+import { Link, Tabs } from 'expo-router';
+import { CalendarDays, Hourglass, PlusIcon } from 'lucide-react-native';
 
 import { customColourHSL } from '@acme/tailwind-config';
+
+import { HeaderButton } from '~/components/HeaderButton';
 
 export default function TabsLayout() {
   return (
@@ -12,6 +14,13 @@ export default function TabsLayout() {
         },
         headerStyle: {
           backgroundColor: customColourHSL('background'),
+        },
+        headerRight: () => {
+          return (
+            <HeaderButton className="mr-4" href="/(modal)/addExpense">
+              <PlusIcon size="20" color={customColourHSL('foreground')} />
+            </HeaderButton>
+          );
         },
       }}
     >
@@ -24,7 +33,7 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="allExpenses"
+        name="expenses"
         options={{
           title: 'All Expenese',
           headerTitle: 'All Expenses',
