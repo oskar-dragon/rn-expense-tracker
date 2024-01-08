@@ -1,12 +1,10 @@
 import { createHTTPServer } from '@trpc/server/adapters/standalone';
 
-import { expensesRouter } from './routes/expenses';
-import { helloRouter } from './routes/hello';
+import { userRouter } from './routes/user';
 import { createTRPCRouter } from './trpc';
 
 const appRouter = createTRPCRouter({
-  hello: helloRouter,
-  expenses: expensesRouter,
+  user: userRouter,
 });
 
 export type AppRouter = typeof appRouter;

@@ -8,8 +8,6 @@ import '../styles.css';
 
 import { useEffect } from 'react';
 
-import { customColourHSL, customColours } from '@acme/tailwind-config';
-
 export { ErrorBoundary } from 'expo-router';
 
 SplashScreen.preventAutoHideAsync();

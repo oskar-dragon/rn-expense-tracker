@@ -24,6 +24,7 @@
     "drizzle-kit": "^0.20.10"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^0.3.14",
     "better-sqlite3": "^9.2.2",
     "drizzle-orm": "^0.29.3"
   },
