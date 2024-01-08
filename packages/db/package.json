@@ -10,7 +10,9 @@
     "clean": "rm -rf .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint .",
-    "push": "drizzle-kit push:sqlite3",
+    "push": "drizzle-kit push:sqlite",
+    "migration:generate": "drizzle-kit generate:sqlite",
+    "drop": "drizzle-kit drop",
     "studio": "drizzle-kit studio",
     "typecheck": "tsc --noEmit"
   },
